@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode development",
-    "build": "webpack --mode production --open",
-    "start": "webpack-dev-server --mode development --open"
+    "start": "webpack-dev-server --mode production --open",
+    "heroku-prebuild":"npm install --dev"
   },
   "author": "prince sharma",
   "license": "ISC",
