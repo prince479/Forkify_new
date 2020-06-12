@@ -5,12 +5,15 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode development",
-    "start": "webpack-dev-server --mode production --open",
-    "heroku-prebuild":"npm install --dev"
+    "start": "webpack-dev-server --mode production --open"
   },
   "author": "prince sharma",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
+    "axios": "^0.19.2",
+    "babel-polyfill": "^6.26.0",
+    "fractional": "^1.0.0",
+    "uniqid": "^5.2.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
@@ -18,11 +21,5 @@
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.11.0"
-  },
-  "dependencies": {
-    "axios": "^0.19.2",
-    "babel-polyfill": "^6.26.0",
-    "fractional": "^1.0.0",
-    "uniqid": "^5.2.0"
   }
 }
