@@ -8,7 +8,7 @@ plugins
 */
 const path= require('path')
 const HtmlWebpackPlugin= require('html-webpack-plugin')
-
+const port = process.env.PORT || 80
 module.exports={
     entry: ['babel-polyfill', './src/js/index.js'],
     output: {
@@ -16,7 +16,8 @@ module.exports={
         filename:'js/bundle.js',
     },
     devServer:{
-    	contentBase:'./dist'
+    	contentBase:'./dist',
+    	port
     },
     // to directly copy src index.html to dist folder
     plugins:[
